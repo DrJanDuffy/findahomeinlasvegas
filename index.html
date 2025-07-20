@@ -89,7 +89,7 @@
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     
-    <!-- Structured Data for SEO -->
+    <!-- RealEstateAgent Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -98,7 +98,8 @@
       "jobTitle": "REALTOR®",
       "worksFor": {
         "@type": "Organization",
-        "name": "Berkshire Hathaway HomeServices Nevada Properties"
+        "name": "Berkshire Hathaway HomeServices Nevada Properties",
+        "url": "https://findahomeinlasvegas.com"
       },
       "address": {
         "@type": "PostalAddress",
@@ -122,21 +123,54 @@
       },
       "telephone": "(702) 930-8222",
       "email": "DrJanSells@SkyeSummitHomes.com",
-      "areaServed": "Skye Summit Las Vegas, Nevada",
+      "url": "https://findahomeinlasvegas.com",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Skye Summit Las Vegas",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Las Vegas",
+          "addressRegion": "NV",
+          "addressCountry": "US"
+        }
+      },
       "specialty": "Skye Summit Real Estate",
-      "description": "Skye Summit Las Vegas real estate specialist with expertise in new construction homes and elevated community properties"
+      "description": "Skye Summit Las Vegas real estate specialist with expertise in new construction homes and elevated community properties",
+      "knowsAbout": ["Skye Summit", "New Construction", "Elevated Communities", "Las Vegas Real Estate", "Residential Properties"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Skye Summit Properties",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Skye Summit New Construction Homes"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Skye Summit Real Estate Services"
+            }
+          }
+        ]
+      }
     }
     </script>
     
-    <!-- Local Business Schema -->
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Berkshire Hathaway HomeServices Nevada Properties",
+      "alternateName": "Dr. Jan Duffy Real Estate",
       "description": "Skye Summit Las Vegas real estate services, specializing in new construction homes and elevated community properties",
       "url": "https://findahomeinlasvegas.com",
       "telephone": "(702) 930-8222",
+      "email": "DrJanSells@SkyeSummitHomes.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "11411 Southern Highlands Pkwy #300",
@@ -160,7 +194,95 @@
           "longitude": -115.1398
         },
         "geoRadius": "50000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Skye Summit Real Estate Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Skye Summit Home Buying",
+              "description": "Expert guidance for purchasing homes in Skye Summit Las Vegas"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Skye Summit Home Selling",
+              "description": "Professional real estate services for selling homes in Skye Summit"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "New Construction Consultation",
+              "description": "Specialized guidance for new construction homes in Skye Summit"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.berkshirehathawayhs.com"
+      ]
+    }
+    </script>
+    
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Skye Summit Las Vegas Real Estate",
+      "url": "https://findahomeinlasvegas.com",
+      "description": "Find your dream home in Skye Summit Las Vegas with Dr. Jan Duffy, REALTOR®",
+      "publisher": {
+        "@type": "Person",
+        "name": "Dr. Jan Duffy",
+        "jobTitle": "REALTOR®",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Berkshire Hathaway HomeServices Nevada Properties"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://findahomeinlasvegas.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+    
+    <!-- Person Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dr. Jan Duffy",
+      "jobTitle": "REALTOR®",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Berkshire Hathaway HomeServices Nevada Properties"
+      },
+      "telephone": "(702) 930-8222",
+      "email": "DrJanSells@SkyeSummitHomes.com",
+      "url": "https://findahomeinlasvegas.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "11411 Southern Highlands Pkwy #300",
+        "addressLocality": "Las Vegas",
+        "addressRegion": "NV",
+        "postalCode": "89141",
+        "addressCountry": "US"
+      },
+      "knowsAbout": ["Skye Summit", "Las Vegas Real Estate", "New Construction", "Residential Properties", "Elevated Communities"],
+      "description": "Skye Summit Las Vegas real estate specialist with 30+ years of experience"
     }
     </script>
 </head>
