@@ -44,6 +44,16 @@ body {
     font-weight: 600;
 }
 
+.nav-brand h2 a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-brand h2 a:hover {
+    color: #FFA500;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
