@@ -42,8 +42,8 @@
     <!-- Vercel Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>
     
-    <!-- RealScout Widget Script with integrity -->
-    <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module" integrity="sha384-REAL_SCOUT_INTEGRITY_HASH" crossorigin="anonymous"></script>
+    <!-- RealScout Widget Script -->
+    <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module"></script>
     
     <!-- RealScout Widget Styling -->
     <style>
@@ -52,12 +52,32 @@
         width: 100%;
         min-height: 480px;
         z-index: 1000;
+        display: block;
+        margin: 2rem 0;
       }
       
       /* Enhanced accessibility for RealScout widget */
       realscout-office-listings::part(listing-card) {
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      }
+      
+      /* Fallback styling if widget doesn't load */
+      .listings .container:has(realscout-office-listings:not(:defined)) {
+        min-height: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7f9fc;
+        border-radius: 8px;
+        border: 2px dashed #3A8DDE;
+      }
+      
+      .listings .container:has(realscout-office-listings:not(:defined))::after {
+        content: "Loading Skye Summit Listings...";
+        font-size: 1.2rem;
+        color: #0A2540;
+        font-weight: 600;
       }
     </style>
     
@@ -325,5 +345,40 @@
     </button>
 
     <script src="script.js"></script>
+    
+    <!-- RealScout Widget Fallback Script -->
+    <script>
+      // Ensure RealScout widget loads properly
+      document.addEventListener('DOMContentLoaded', function() {
+        const widget = document.querySelector('realscout-office-listings');
+        
+        if (widget) {
+          // Add loading state
+          widget.style.opacity = '0';
+          widget.style.transition = 'opacity 0.5s ease-in-out';
+          
+          // Check if widget is defined
+          if (customElements.get('realscout-office-listings')) {
+            widget.style.opacity = '1';
+          } else {
+            // Fallback if widget doesn't load
+            setTimeout(() => {
+              if (!customElements.get('realscout-office-listings')) {
+                const container = widget.parentElement;
+                container.innerHTML = `
+                  <div style="text-align: center; padding: 3rem; background: #f7f9fc; border-radius: 8px; border: 2px dashed #3A8DDE;">
+                    <h3 style="color: #0A2540; margin-bottom: 1rem;">Skye Summit Listings</h3>
+                    <p style="color: #666; margin-bottom: 2rem;">View current listings in Skye Summit</p>
+                    <a href="#contact" class="btn btn-primary" style="text-decoration: none; padding: 12px 24px; background: #3A8DDE; color: white; border-radius: 6px; font-weight: 600;">
+                      Contact Dr. Jan Duffy for Listings
+                    </a>
+                  </div>
+                `;
+              }
+            }, 5000); // 5 second timeout
+          }
+        }
+      });
+    </script>
 </body>
 </html> 
