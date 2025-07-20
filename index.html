@@ -22,7 +22,15 @@
     <script defer src="/_vercel/insights/script.js"></script>
     
     <!-- RealScout Widget Script -->
-    <script src="https://widget.realscout.com/widget.js" async></script>
+    <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module"></script>
+    
+    <!-- RealScout Widget Styling -->
+    <style>
+      realscout-office-listings {
+        --rs-listing-divider-color: rgb(101, 141, 172);
+        width: 100%;
+      }
+    </style>
     
     <!-- Performance hints -->
     <meta name="format-detection" content="telephone=no">
