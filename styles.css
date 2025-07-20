@@ -513,6 +513,48 @@ realscout-office-listings {
     background: #2a7bc8;
 }
 
+/* Google Business Profile Styles */
+.gmb-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.gmb-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.gmb-info .fas.fa-star {
+    color: #FFD700;
+    margin-right: 0.25rem;
+}
+
+.gmb-link, .review-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3A8DDE;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.gmb-link:hover, .review-link:hover {
+    color: #2a7bc8;
+    text-decoration: underline;
+}
+
+.gmb-link .fab.fa-google {
+    color: #4285F4;
+}
+
+.review-link .fas.fa-edit {
+    color: #16B286;
+}
+
 .footer-bottom {
     border-top: 1px solid #333;
     padding-top: 1rem;
