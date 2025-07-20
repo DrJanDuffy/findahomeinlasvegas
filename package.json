@@ -1,0 +1,12 @@
+{
+  "name": "skye-summit-realestate",
+  "version": "1.0.0",
+  "description": "Professional Las Vegas Real Estate Website",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "dev": "python -m http.server 3000",
+    "start": "python -m http.server 8080"
+  },
+  "keywords": ["real-estate", "las-vegas", "property"],
+  "author": "Skye Summit Real Estate"
+} 
