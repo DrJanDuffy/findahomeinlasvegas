@@ -1,0 +1,95 @@
+Of course. Here is an expanded, strategic homepage layout for "Find a Home in Las Vegas," designed to be an awesome, hyperlocal resource for the Skye Summit community. This blueprint builds upon the H1 and H2 headings to create a compelling user experience that drives engagement and captures leads.
+
+# **Homepage Blueprint: Your Skye Summit Real Estate Portal**
+
+This structure is designed to establish your authority, showcase the unique appeal of Skye Summit, and convert visitors into clients.
+
+### **Section 1: Hero Section (Above the Fold)**
+
+This is the first thing visitors see. It must be visually striking and immediately communicate your value proposition.
+
+*   **Background:** Use a high-resolution, professional video or a stunning panoramic photograph of the views from Centennial Hills, looking toward the Las Vegas Strip, or an architectural rendering of a signature Skye Summit streetscape.
+*   **H1 Heading:**
+    # **Find a Home in Las Vegas: Skye Summit Real Estate & New Homes**
+*   **Sub-heading (optional but recommended):**
+    *   *Elevated Living. Unmatched Views. Expert Guidance.*
+*   **Primary Call-to-Action (CTA) Button:** A large, prominently displayed button.
+    *   **Button Text:** `View Skye Summit Listings`
+*   **Secondary CTA (optional):** A less prominent link or button.
+    *   **Text:** `Get a Custom Home Report`
+
+### **Section 2: Your Expert Introduction**
+
+This section quickly introduces the community and positions you as the go-to expert.
+
+*   **H2 Heading:**
+    ## **Your Guide to Finding a Home in Las Vegas' Newest Elevated Community**
+*   **Introductory Paragraph:**
+    > "Welcome to Skye Summit, the newest jewel in northwest Las Vegas. Perched at an elevation of 3,200 feet, this master-planned community offers a unique blend of sophisticated home designs, breathtaking views, and an active lifestyle. As a real estate specialist with over 30 years of experience in Las Vegas, I provide data-driven insights to help you not just find a house, but secure a valuable long-term investment. Whether you are relocating or seeking a new-build opportunity, this is your definitive resource for navigating the Skye Summit market."
+
+### **Section 3: Featured Real Estate Listings**
+
+This is the core of the homepage. It should be dynamic, easy to use, and visually appealing.
+
+*   **H2 Heading:**
+    ## **Explore Skye Summit Listings & Lifestyle Amenities**
+*   **Interactive Map:** Embed a custom Google Map highlighting Skye Summit's location, key amenities (parks, future commercial areas), and available listings pinned on the map.
+*   **Featured Listings Grid:** Display 3-6 featured properties with high-quality images. Each listing card should include:
+    *   Primary Photo
+    *   Price
+    *   Bed/Bath Count & Square Footage
+    *   A "New Construction" or "Hot Property" banner
+*   **Search Bar:** A simple, powerful search tool.
+    *   **Fields:** Keywords (e.g., "single-story," "pool"), Price Range, Beds, Baths.
+*   **CTA Button:**
+    *   **Button Text:** `See All Available Skye Summit Homes`
+
+### **Section 4: Why Skye Summit? (The Hyperlocal Focus)**
+
+Dive deep into what makes the community special. This builds desire and demonstrates your intimate knowledge of the area.
+
+*   **H2 Heading:**
+    ## **An Elevated Lifestyle Awaits**
+*   **Content Layout:** Use a three-column layout with icons for scannability.
+    *   **Column 1: Unmatched Views & Outdoors**
+        > "Discover homesites with panoramic views of the Las Vegas valley and nearby mountains. With integrated parks and trail systems, Skye Summit is designed for those who value nature and an active, outdoor lifestyle."
+    *   **Column 2: Modern Homes & New Construction**
+        > "Explore a variety of brand-new, energy-efficient homes from premier builders. Find the perfect floor plan to match your needs, with cutting-edge designs and modern finishes."
+    *   **Column 3: Community & Convenience**
+        > "Enjoy the benefits of a thoughtfully planned community, located within the booming Centennial Hills area. You're just moments away from shopping, dining, and top-rated schools."
+
+### **Section 5: Your Trusted Advisor (Builds Authority)**
+
+Introduce yourself and give visitors a compelling reason to contact you over anyone else. This is tailored to your profile, Dr. Jan Duffy.
+
+*   **H2 Heading:**
+    ## **Partner with a Specialist to Find a Home in Skye Summit Las Vegas**
+*   **Layout:** Place a professional headshot next to this text.
+*   **Your Bio:**
+    > "**I'm Dr. Jan Duffy, REALTOR®**. With a doctorate in business and over three decades of Las Vegas real estate experience, my approach is different. I leverage in-depth market research and pricing analysis to ensure my clients make informed decisions that align with their financial goals. For you, this means a competitive advantage in securing your ideal home in Skye Summit."
+*   **Trust Badges/Logos:** Include logos for Berkshire Hathaway HomeServices, REALTOR®, and any relevant certifications.
+*   **CTA Button:**
+    *   **Button Text:** `Schedule a Free Consultation`
+
+### **Section 6: Market Insights (SEO & Value-Add)**
+
+Provide valuable content that answers questions and builds your SEO authority for long-tail keywords.
+
+*   **H2 Heading:**
+    ## **Skye Summit & Las Vegas Real Estate News**
+*   **Content:** Display the three most recent blog posts in a grid format.
+    *   **Example Post Title 1:** *Is New Construction in Skye Summit a Good Investment?*
+    *   **Example Post Title 2:** *The 5 Key Benefits of Living in Centennial Hills*
+    *   **Example Post Title 3:** *2025 Las Vegas Market Update: What Buyers Need to Know*
+*   **CTA Link:**
+    *   **Text:** `Read More on the Blog`
+
+### **Section 7: Footer**
+
+A comprehensive footer with all necessary contact and legal information.
+
+*   **Contact Information:** Name, Phone Number, Email, Office Address.
+*   **Brokerage Info:** "Dr. Jan Duffy, REALTOR® | Berkshire Hathaway HomeServices Nevada Properties"
+*   **Social Media Links:** LinkedIn, Facebook, Instagram, etc.
+*   **Navigation Links:** Home | About Me | Skye Summit Listings | Testimonials | Contact
+*   **Legal:** Privacy Policy, Terms of Use, MLS/IDX Disclaimer.
