@@ -179,6 +179,14 @@ section {
     margin-bottom: 3rem;
 }
 
+/* RealScout Widget Styling */
+realscout-office-listings {
+    display: block;
+    width: 100%;
+    min-height: 600px;
+    margin: 2rem 0;
+}
+
 .search-bar {
     display: flex;
     gap: 1rem;

@@ -21,6 +21,9 @@
     <!-- Vercel Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>
     
+    <!-- RealScout Widget Script -->
+    <script src="https://widget.realscout.com/widget.js" async></script>
+    
     <!-- Performance hints -->
     <meta name="format-detection" content="telephone=no">
     <meta name="mobile-web-app-capable" content="yes">
@@ -69,76 +72,20 @@
         </div>
     </section>
 
-    <!-- Section 3: Featured Listings -->
+    <!-- Section 3: RealScout Listings -->
     <section id="listings" class="listings">
         <div class="container">
             <h2>Explore Skye Summit Listings & Lifestyle Amenities</h2>
             
-            <!-- Search Bar -->
-            <div class="search-bar">
-                <input type="text" placeholder="Keywords (e.g., single-story, pool)" class="search-input">
-                <select class="search-select" title="Price Range">
-                    <option>Price Range</option>
-                    <option>$400,000 - $600,000</option>
-                    <option>$600,000 - $800,000</option>
-                    <option>$800,000 - $1,000,000</option>
-                    <option>$1,000,000+</option>
-                </select>
-                <select class="search-select" title="Bedrooms">
-                    <option>Beds</option>
-                    <option>2+</option>
-                    <option>3+</option>
-                    <option>4+</option>
-                    <option>5+</option>
-                </select>
-                <select class="search-select" title="Bathrooms">
-                    <option>Baths</option>
-                    <option>2+</option>
-                    <option>3+</option>
-                    <option>4+</option>
-                </select>
-                <button class="btn btn-primary">Search</button>
-            </div>
-
-            <!-- Featured Properties Grid -->
-            <div class="properties-grid">
-                <div class="property-card">
-                    <div class="property-image">
-                        <div class="property-badge">New Construction</div>
-                    </div>
-                    <div class="property-info">
-                        <div class="property-price">$675,000</div>
-                        <div class="property-details">4 Beds • 3 Baths • 2,450 sq ft</div>
-                        <div class="property-address">Skye Summit - Plan A</div>
-                    </div>
-                </div>
-
-                <div class="property-card">
-                    <div class="property-image">
-                        <div class="property-badge">Hot Property</div>
-                    </div>
-                    <div class="property-info">
-                        <div class="property-price">$725,000</div>
-                        <div class="property-details">5 Beds • 4 Baths • 2,850 sq ft</div>
-                        <div class="property-address">Skye Summit - Plan B</div>
-                    </div>
-                </div>
-
-                <div class="property-card">
-                    <div class="property-image">
-                        <div class="property-badge">New Construction</div>
-                    </div>
-                    <div class="property-info">
-                        <div class="property-price">$825,000</div>
-                        <div class="property-details">6 Beds • 5 Baths • 3,200 sq ft</div>
-                        <div class="property-address">Skye Summit - Plan C</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="listings-cta">
-                <a href="#" class="btn btn-primary">See All Available Skye Summit Homes</a>
-            </div>
+            <!-- RealScout Office Listings Widget -->
+            <realscout-office-listings 
+                agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                sort-order="STATUS_AND_SIGNIFICANT_CHANGE" 
+                listing-status="For Sale" 
+                property-types="SFR,MF,TC" 
+                price-min="600000" 
+                price-max="1200000">
+            </realscout-office-listings>
         </div>
     </section>
 
