@@ -108,10 +108,58 @@
         "postalCode": "89141",
         "addressCountry": "US"
       },
+      "location": {
+        "@type": "Place",
+        "name": "Berkshire Hathaway HomeServices Nevada Properties",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "11411 Southern Highlands Pkwy #300",
+          "addressLocality": "Las Vegas",
+          "addressRegion": "NV",
+          "postalCode": "89141",
+          "addressCountry": "US"
+        }
+      },
       "telephone": "(702) 555-0123",
       "email": "jan.duffy@bhhsnv.com",
       "areaServed": "Las Vegas, Nevada",
       "specialty": "Skye Summit Real Estate"
+    }
+    </script>
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Berkshire Hathaway HomeServices Nevada Properties",
+      "description": "Real estate services in Las Vegas, specializing in Skye Summit and new construction homes",
+      "url": "https://findahomeinlasvegas.com",
+      "telephone": "(702) 555-0123",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "11411 Southern Highlands Pkwy #300",
+        "addressLocality": "Las Vegas",
+        "addressRegion": "NV",
+        "postalCode": "89141",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.1699,
+        "longitude": -115.1398
+      },
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "priceRange": "$$",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.1699,
+          "longitude": -115.1398
+        },
+        "geoRadius": "50000"
+      }
     }
     </script>
 </head>
