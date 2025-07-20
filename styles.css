@@ -555,6 +555,29 @@ realscout-office-listings {
     color: #16B286;
 }
 
+.review-request-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #16B286;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.review-request-btn:hover {
+    background: #139a73;
+}
+
+.review-request-btn .fas.fa-star {
+    color: #FFD700;
+}
+
 .footer-bottom {
     border-top: 1px solid #333;
     padding-top: 1rem;

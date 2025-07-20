@@ -234,4 +234,195 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', lazyLoadImages);
 } else {
     lazyLoadImages();
+}
+
+// Review request functionality
+const reviewRequestBtn = document.getElementById('review-request-btn');
+
+if (reviewRequestBtn) {
+    reviewRequestBtn.addEventListener('click', () => {
+        // Check if user has visited before
+        const hasVisited = localStorage.getItem('hasVisitedBefore');
+        
+        if (!hasVisited) {
+            // First-time visitor - show welcome message
+            showReviewRequestModal('Welcome!', 
+                'Thank you for visiting our Skye Summit real estate website! If you\'ve worked with Dr. Jan Duffy, we\'d love to hear about your experience.',
+                'https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_CID&action=write_review');
+            localStorage.setItem('hasVisitedBefore', 'true');
+        } else {
+            // Returning visitor - show review request
+            showReviewRequestModal('Share Your Experience', 
+                'If you\'ve had a great experience with Dr. Jan Duffy and Skye Summit real estate, please consider leaving a review to help others.',
+                'https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_CID&action=write_review');
+        }
+    });
+}
+
+function showReviewRequestModal(title, message, reviewUrl) {
+    const modal = document.createElement('div');
+    modal.className = 'review-modal';
+    modal.innerHTML = `
+        <div class="review-modal-content">
+            <div class="review-modal-header">
+                <h3>${title}</h3>
+                <button class="review-modal-close" aria-label="Close review request modal">&times;</button>
+            </div>
+            <div class="review-modal-body">
+                <p>${message}</p>
+                <div class="review-modal-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="review-modal-footer">
+                <a href="${reviewUrl}" target="_blank" rel="noopener" class="btn btn-primary">
+                    <i class="fas fa-edit"></i> Write Review on Google
+                </a>
+                <button class="btn btn-secondary review-modal-close">Maybe Later</button>
+            </div>
+        </div>
+    `;
+
+    // Add modal styles
+    const style = document.createElement('style');
+    style.textContent = `
+        .review-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .review-modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.3s ease;
+        }
+        
+        .review-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 1.5rem 0;
+        }
+        
+        .review-modal-header h3 {
+            margin: 0;
+            color: #0A2540;
+            font-size: 1.5rem;
+        }
+        
+        .review-modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+        
+        .review-modal-close:hover {
+            background: #f0f0f0;
+        }
+        
+        .review-modal-body {
+            padding: 1rem 1.5rem;
+            text-align: center;
+        }
+        
+        .review-modal-body p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .review-modal-stars {
+            display: flex;
+            justify-content: center;
+            gap: 0.25rem;
+            margin: 1rem 0;
+        }
+        
+        .review-modal-stars .fas.fa-star {
+            color: #FFD700;
+            font-size: 1.5rem;
+        }
+        
+        .review-modal-footer {
+            padding: 0 1.5rem 1.5rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @media (max-width: 480px) {
+            .review-modal-footer {
+                flex-direction: column;
+            }
+            
+            .review-modal-content {
+                margin: 1rem;
+            }
+        }
+    `;
+    
+    document.head.appendChild(style);
+    document.body.appendChild(modal);
+
+    // Close modal functionality
+    const closeButtons = modal.querySelectorAll('.review-modal-close');
+    closeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            modal.remove();
+            style.remove();
+        });
+    });
+
+    // Close on outside click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.remove();
+            style.remove();
+        }
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            modal.remove();
+            style.remove();
+        }
+    });
 } 
