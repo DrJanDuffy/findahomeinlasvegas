@@ -53,4 +53,6 @@ Allow: /guides/
 # Allow about and credential pages
 Allow: /about/
 Allow: /credentials/
-Allow: /dr-jan-duffy/ 
+Allow: /dr-jan-duffy/
+
+# Last updated: 2025-01-20 
