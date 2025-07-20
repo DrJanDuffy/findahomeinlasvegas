@@ -1,9 +1,0 @@
-# Redirect www to non-www (if you have a custom domain)
-# www.yourdomain.com/* https://yourdomain.com/:splat 301
-
-# Redirect old file paths to new structure (if needed)
-# /styles.css /assets/css/styles.css 301
-# /script.js /assets/js/script.js 301
-
-# Handle 404s gracefully
-/* /index.html 200 
