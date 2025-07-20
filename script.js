@@ -148,7 +148,7 @@ function showContactModal() {
             <h2 style="color: #0A2540; margin-bottom: 1rem;">Contact Dr. Jan Duffy</h2>
             <p style="color: #666; margin-bottom: 1.5rem;">Ready to find your dream home in Skye Summit? Let's connect!</p>
             <div style="margin-bottom: 1rem;">
-                <strong>Phone:</strong> (702) 555-0123
+                <strong>Phone:</strong> (702) 930-8222
             </div>
             <div style="margin-bottom: 1rem;">
                 <strong>Email:</strong> jan.duffy@bhhsnv.com

@@ -94,7 +94,7 @@ The site uses a professional color palette:
 
 **Dr. Jan Duffy, REALTOR®**  
 Berkshire Hathaway HomeServices Nevada Properties  
-Phone: (702) 555-0123  
+Phone: (702) 930-8222  
 Email: jan.duffy@bhhsnv.com  
 Location: Las Vegas, Nevada
 
