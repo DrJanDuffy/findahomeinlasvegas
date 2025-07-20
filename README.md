@@ -95,7 +95,7 @@ The site uses a professional color palette:
 **Dr. Jan Duffy, REALTOR®**  
 Berkshire Hathaway HomeServices Nevada Properties  
 Phone: (702) 930-8222  
-Email: jan.duffy@bhhsnv.com  
+Email: DrJanSells@SkyeSummitHomes.com  
 Location: Las Vegas, Nevada
 
 ## License

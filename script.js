@@ -151,7 +151,7 @@ function showContactModal() {
                 <strong>Phone:</strong> (702) 930-8222
             </div>
             <div style="margin-bottom: 1rem;">
-                <strong>Email:</strong> jan.duffy@bhhsnv.com
+                <strong>Email:</strong> DrJanSells@SkyeSummitHomes.com
             </div>
             <div style="margin-bottom: 1.5rem;">
                 <strong>Location:</strong> Las Vegas, Nevada
