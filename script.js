@@ -248,13 +248,13 @@ if (reviewRequestBtn) {
             // First-time visitor - show welcome message
             showReviewRequestModal('Welcome!', 
                 'Thank you for visiting our Skye Summit real estate website! If you\'ve worked with Dr. Jan Duffy, we\'d love to hear about your experience.',
-                'https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_CID&action=write_review');
+                'https://share.google/yoVmGzrpTUtHrvsnL&action=write_review');
             localStorage.setItem('hasVisitedBefore', 'true');
         } else {
             // Returning visitor - show review request
             showReviewRequestModal('Share Your Experience', 
                 'If you\'ve had a great experience with Dr. Jan Duffy and Skye Summit real estate, please consider leaving a review to help others.',
-                'https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_CID&action=write_review');
+                'https://share.google/yoVmGzrpTUtHrvsnL&action=write_review');
         }
     });
 }
